@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAI1Px4XA+GkqiFSgojEXTXwAAAAACAAAAAAAQZgAAAAEAACAAAAD3REAuWqWb9fIYl0nINOJhIfUk+frT71BDuPE7iWrySwAAAAAOgAAAAAIAACAAAADstMilS4X3z2LH8JlHG5in5DAwi/YeVD9q+BDfrBxAcCAAAAC46ob4yJq5jMVZbAQ92Cpxz9VPr/Pg/huR/jjukZLrMkAAAAADjiR2kyrF6GWQjgPt7l1nGkFaLDPa73RvTFv/9Y1+KOtHzr7DScRKdZNCwCGSX0cPFlIcsvkf5kByyYPdpcvk</EncryptedPassword>
+    <History>True|2023-01-24T12:06:31.2007250Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnectionStrings">
+      <Value>Data Source=SQL8001.site4now.net%3bInitial Catalog=db_a93717_nikitadovnar%3bUser Id=db_a93717_nikitadovnar_admin%3bPassword=P%40ssw0rd!</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="ConnetctionString">
+      <Value>Data Source=SQL8001.site4now.net%3bInitial Catalog=db_a93717_nikitadovnar%3bUser Id=db_a93717_nikitadovnar_admin%3bPassword=P%40ssw0rd!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Task4.Data.ApplicationContext">
+      <Value>Data Source=SQL8001.site4now.net%3bInitial Catalog=db_a93717_nikitadovnar%3bUser Id=db_a93717_nikitadovnar_admin%3bPassword=P%40ssw0rd!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

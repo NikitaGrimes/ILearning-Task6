@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<EmailModel>
+<div class="text-center">
+    <h1 class="display-4">Welcome to NikChat!</h1>
+</div>
+<div class="media mb-2">
+    <div class="media-body" id="messagesList">
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
+    <div class="media mb-2">
+        <div class="media-body">
+            <a class="media-body text-decoration-none text-reset" data-bs-toggle="collapse" href="#@item.Id" role="button" aria-expanded="false" aria-controls="@item.Id">
+                <p class="mb-1"><strong>@item.Sender</strong></p>
+                <p class="mb-1"><strong>@item.Title</strong></p>
+                <p class="small text-muted">@item.CreatedDate</p>
+            </a>
+            <div class="collapse" id="@item.Id">
+                <div class="card card-body">
+                    <p class="mb-1">@item.Body</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/email_get.js"></script>

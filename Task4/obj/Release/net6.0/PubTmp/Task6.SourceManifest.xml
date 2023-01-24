@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\ILearning\Task6\Task4\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="C:\ILearning\Task6\Task4\obj\Release\net6.0\PubTmp\EFSQLScripts\Task4.Data.ApplicationContext.sql" />
+</sitemanifest>
